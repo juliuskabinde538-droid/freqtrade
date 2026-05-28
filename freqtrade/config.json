@@ -18,7 +18,7 @@
         "0": 0.04
     },
     "exchange": {
-        "name": "binance",
+        "name": "kraken",
         "key": "",
         "secret": "",
         "pair_whitelist": [

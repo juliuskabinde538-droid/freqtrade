@@ -1,0 +1,54 @@
+{
+    "max_open_trades": 3,
+    "stake_currency": "USDT",
+    "stake_amount": 20,
+    "tradable_balance_ratio": 0.99,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "dry_run_wallet": 1000,
+    "timeframe": "5m",
+    "stoploss": -0.10,
+    "trailing_stop": false,
+    "use_exit_signal": true,
+    "exit_profit_only": false,
+    "minimal_roi": {
+        "40": 0.0,
+        "30": 0.01,
+        "20": 0.02,
+        "0": 0.04
+    },
+    "exchange": {
+        "name": "binance",
+        "key": "",
+        "secret": "",
+        "pair_whitelist": [
+            "BTC/USDT",
+            "ETH/USDT",
+            "BNB/USDT",
+            "SOL/USDT",
+            "XRP/USDT"
+        ]
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "8755616067:AAH0CGKXnsxj0uJJoVypumrFO4nzO_QEL40",
+        "chat_id": "6331201215",
+        "notification_settings": {
+            "status": "on",
+            "warning": "on",
+            "startup": "on",
+            "entry": "on",
+            "entry_fill": "on",
+            "exit_fill": "on",
+            "entry_cancel": "on",
+            "exit_cancel": "on"
+        }
+    },
+    "initial_state": "running",
+    "bot_name": "FreqTrade",
+    "strategy": "SampleStrategy",
+    "strategy_path": "user_data/strategies/",
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}
